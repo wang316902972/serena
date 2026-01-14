@@ -3,8 +3,11 @@ FROM python:3.11-slim AS base
 SHELL ["/bin/bash", "-c"]
 
 # Set environment variables to make Python print directly to the terminal and avoid .pyc files.
-ENV PYTHONUNBUFFERED 1
-ENV PYTHONDONTWRITEBYTECODE 1
+ENV PYTHONUNBUFFERED=1
+ENV PYTHONDONTWRITEBYTECODE=1
+
+ENV http_proxy=http://192.168.136.223:7897
+ENV https_proxy=http://192.168.136.223:7897
 
 # Install system dependencies required for package manager and build tools.
 RUN apt-get update && apt-get install -y --no-install-recommends \

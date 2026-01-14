@@ -199,7 +199,7 @@ This and other settings can be adjusted in the [configuration](#configuration) a
 
 1. Clone the repository and change into it.
    ```shell
-   git clone https://github.com/oraios/serena
+   git clone https://github.com/wang316902972/serena
    cd serena
    ```
 2. Optionally create the configuration file in your home directory, i.e.
@@ -228,11 +228,11 @@ This and other settings can be adjusted in the [configuration](#configuration) a
 
 * Windows:
   ```shell
-  uvx --from git+https://github.com/oraios/serena serena-mcp-server.exe
+  uvx --from git+https://github.com/wang316902972/serena serena-mcp-server.exe
   ```
 * Other operating systems:
   ```shell
-  uvx --from git+https://github.com/oraios/serena serena-mcp-server
+  uvx --from git+https://github.com/wang316902972/serena serena-mcp-server
   ```
 
 ##### Using Docker (Experimental)
@@ -335,7 +335,7 @@ To do so, run one of these commands the project directory or pass the path to th
   ```
 * When using uvx:
   ```shell
-  uvx --from git+https://github.com/oraios/serena index-project
+  uvx --from git+https://github.com/wang316902972/serena index-project
   ```
 
 ### Claude Code
@@ -351,7 +351,7 @@ claude mcp add serena -- <serena-mcp-server> --context ide-assistant --project $
 where `<serena-mcp-server>` is your way of [running the Serena MCP server](#running-the-serena-mcp-server).
 For example, when using `uvx`, you would run
 ```shell
-claude mcp add serena -- uvx --from git+https://github.com/oraios/serena serena-mcp-server --context ide-assistant --project $(pwd)
+claude mcp add serena -- uvx --from git+https://github.com/wang316902972/serena serena-mcp-server --context ide-assistant --project $(pwd)
 ```
 
 ℹ️ Serena comes with an instruction text, and Claude needs to read it to properly use Serena's tools. 
@@ -359,7 +359,7 @@ claude mcp add serena -- uvx --from git+https://github.com/oraios/serena serena-
   Do this whenever you start a new conversation and after any compacting operation to ensure Claude remains properly configured to use Serena's tools.
 
 ℹ️ **NEW**: an alternative to the above is adding the instructions as part of the system prompt, then you will not need to run the command above or to remember re-running it after compacting.
-  This can be achieved through starting claude code with `claude --append-system-prompt $(uvx --from git+https://github.com/oraios/serena serena print-system-prompt)`. Note that this is **experimental**, Claude may not understand the instructions correctly in this way, and we haven't thoroughly tested the resulting behavior. Please report any issues you encounter.
+  This can be achieved through starting claude code with `claude --append-system-prompt $(uvx --from git+https://github.com/wang316902972/serena serena print-system-prompt)`. Note that this is **experimental**, Claude may not understand the instructions correctly in this way, and we haven't thoroughly tested the resulting behavior. Please report any issues you encounter.
 
 
 ### Claude Desktop
@@ -385,7 +385,7 @@ Add the `serena` MCP server configuration, using a [run command](#running-the-se
        "mcpServers": {
            "serena": {
                "command": "/abs/path/to/uvx",
-               "args": ["--from", "git+https://github.com/oraios/serena", "serena-mcp-server"]
+               "args": ["--from", "git+https://github.com/wang316902972/serena", "serena-mcp-server"]
            }
        }
   }
