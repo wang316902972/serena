@@ -79,7 +79,7 @@ agno = ["agno>=2.2.1", "sqlalchemy>=2.0.40"]
 google = ["google-genai>=1.8.0"]
 
 [project.urls]
-Homepage = "https://github.com/oraios/serena"
+Homepage = "https://github.com/wang316902972/serena"
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/serena", "src/interprompt", "src/solidlsp"]

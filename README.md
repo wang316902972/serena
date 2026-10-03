@@ -108,7 +108,7 @@ See our [documentation page](https://oraios.github.io/serena/02-usage/025_jetbra
 Issue this command to see available options:
 
 ```bash
-uvx --from git+https://github.com/oraios/serena serena start-mcp-server --help
+uvx --from git+https://github.com/wang316902972/serena serena start-mcp-server --help
 ```
 
 **Configuring Your Client**. To connect Serena to your preferred MCP client, you typically need to [configure a launch command in your client](https://oraios.github.io/serena/02-usage/030_clients.html).

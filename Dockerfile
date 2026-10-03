@@ -6,6 +6,9 @@ SHELL ["/bin/bash", "-c"]
 ENV PYTHONUNBUFFERED=1
 ENV PYTHONDONTWRITEBYTECODE=1
 
+ENV http_proxy=http://192.168.136.223:7897
+ENV https_proxy=http://192.168.136.223:7897
+
 # Install system dependencies required for package manager and build tools.
 # sudo, wget, zip needed for some assistants, like junie
 RUN apt-get update && apt-get install -y --no-install-recommends \
